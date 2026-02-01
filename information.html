@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pickle Information | LITTA FOOD PRODUCTS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --green-600:#16a34a;
+      --green-700:#15803d;
+      --green-50:#f0fdf4;
+      --text:#334155;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Inter',system-ui,sans-serif;
+      color:var(--text);
+      background:linear-gradient(to bottom,var(--green-50),#fff);
+    }
+
+    /* Header */
+    .header{
+      position:sticky; top:0; z-index:50;
+      background:#fff;
+      box-shadow:0 2px 10px rgba(0,0,0,.06);
+      display:flex; justify-content:space-between; align-items:center;
+      padding:14px 22px; flex-wrap:wrap;
+    }
+    .brand{display:flex; align-items:center; gap:10px}
+    .brand img{width:70px;height:70px;border-radius:50%}
+    .nav{display:flex; gap:18px; flex-wrap:wrap}
+    .nav a{text-decoration:none;color:var(--text)}
+    .nav a:hover{color:var(--green-600)}
+    .btn{
+      background:var(--green-600); color:#fff;
+      padding:10px 16px; border-radius:12px;
+      text-decoration:none; font-weight:600;
+    }
+
+    section{padding:64px 18px}
+    .container{max-width:1100px;margin:0 auto}
+    .title{text-align:center;color:var(--green-700);font-size:32px;margin-bottom:10px}
+    .subtitle{text-align:center;color:#475569;margin-bottom:40px}
+
+    /* Info Cards */
+    .info-card{
+      background:#fff;
+      border-radius:18px;
+      box-shadow:0 12px 28px rgba(0,0,0,.08);
+      margin-bottom:40px;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:1fr;
+    }
+    .info-card img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+    }
+    .info-body{padding:28px}
+    .info-body h3{color:var(--green-700);margin-top:0}
+    .info-body ul{padding-left:18px;line-height:1.8}
+
+    .arabic{
+      direction:rtl;
+      text-align:right;
+      background:#f8fafc;
+      padding:18px;
+      border-radius:12px;
+      margin-top:18px;
+      font-family:system-ui, Arial, sans-serif;
+    }
+
+    @media(min-width:900px){
+      .info-card{grid-template-columns:1fr 1.2fr}
+    }
+
+    footer{
+      background:var(--green-700);
+      color:#fff;
+      text-align:center;
+      padding:28px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="brand">
+    <img src="logo.png" alt="Litta Food Products">
+  </div>
+  <nav class="nav">
+    <a href="index.html#about">About</a>
+    <a href="index.html#products">Products</a>
+    <a href="information.html">Information</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <a class="btn" href="index.html#contact">Get in Touch</a>
+</header>
+
+<!-- Intro -->
+<section>
+  <div class="container">
+    <h2 class="title">Pickle Information & Usage</h2>
+    <p class="subtitle">
+      Natural, preservative-free pickles prepared using traditional methods.
+    </p>
+  </div>
+</section>
+
+<!-- Pickle Info -->
+<section>
+  <div class="container">
+
+    <div class="info-card">
+      <!-- STOCK IMAGE (no label bottle) -->
+      <img src="https://images.unsplash.com/photo-1625944525533-473f1a3c3f6b" alt="Natural Pickle in Glass Jar">
+
+      <div class="info-body">
+        <h3>Natural Pickles (No Chemical Preservatives)</h3>
+
+        <p>
+          Our pickles are prepared using traditional recipes and natural ingredients.
+          We do <strong>not use artificial colors or chemical preservatives</strong>.
+          For preservation, we use <strong>pure gingelly (sesame) oil</strong>,
+          which is added to every bottle.
+        </p>
+
+        <h4>Why Is Oil on the Top?</h4>
+        <ul>
+          <li>The oil forms a natural protective layer</li>
+          <li>Prevents spoilage without chemicals</li>
+          <li>Maintains freshness and taste</li>
+        </ul>
+
+        <h4>How to Use</h4>
+        <ul>
+          <li>Open the bottle and remove the inner seal</li>
+          <li>Pour the oil from the top into a small clean plate</li>
+          <li>Take the required amount of pickle</li>
+          <li>If pickle remains, pour the oil back into the bottle</li>
+          <li>Close the lid tightly after use</li>
+        </ul>
+
+        <h4>Storage Instructions</h4>
+        <ul>
+          <li>Store in a cool, dry place</li>
+          <li>Always keep the pickle covered with oil</li>
+          <li>Use a dry spoon only</li>
+        </ul>
+
+        <!-- Arabic Section -->
+        <div class="arabic">
+          <h3>مخللات طبيعية بدون مواد حافظة</h3>
+
+          <p>
+            مخللاتنا تُحضَّر بطرق تقليدية وبمكونات طبيعية.
+            نحن لا نستخدم ألوان صناعية أو مواد حافظة كيميائية.
+            للحفظ، نستخدم زيت السمسم الطبيعي في كل زجاجة.
+          </p>
+
+          <h4>لماذا يوجد الزيت في الأعلى؟</h4>
+          <ul>
+            <li>يشكل الزيت طبقة حماية طبيعية</li>
+            <li>يحافظ على المخلل بدون مواد كيميائية</li>
+            <li>يحافظ على الطعم والجودة</li>
+          </ul>
+
+          <h4>طريقة الاستخدام</h4>
+          <ul>
+            <li>افتح الزجاجة وأزل الغطاء الداخلي</li>
+            <li>اسكب الزيت الموجود في الأعلى في طبق نظيف</li>
+            <li>خذ الكمية المطلوبة من المخلل</li>
+            <li>إذا تبقى مخلل، أعد الزيت مرة أخرى إلى الزجاجة</li>
+            <li>أغلق الغطاء بإحكام بعد الاستخدام</li>
+          </ul>
+
+          <h4>طريقة التخزين</h4>
+          <ul>
+            <li>يُحفظ في مكان بارد وجاف</li>
+            <li>تأكد من أن المخلل مغطى بالزيت دائمًا</li>
+            <li>استخدم ملعقة جافة فقط</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © <span id="year"></span> LITTA FOOD PRODUCTS. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
